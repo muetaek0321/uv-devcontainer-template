@@ -3,15 +3,20 @@
 	"build": {
 	  "dockerfile": "../Dockerfile"
 	},
-	"settings": {
-	  "terminal.integrated.defaultProfile.linux": "bash"
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "bash"
+		},
+		"extensions": [
+		  "ms-python.python",
+		  "kevinrose.vsc-python-indent",
+		  "mhutchie.git-graph",
+		  "eamodio.gitlens",
+		  "charliermarsh.ruff"
+		]
+	  }
 	},
-	"extensions": [
-	  "ms-python.python",
-	  "kevinrose.vsc-python-indent",
-	  "mhutchie.git-graph",
-	  "eamodio.gitlens"
-	],
 	"forwardPorts": [8000],
 	"remoteUser": "root",
 	"runArgs": ["--gpus", "all"],
